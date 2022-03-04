@@ -29,7 +29,8 @@ class MultiPage():
             format_func=lambda page: page["title"]
         )
 
-        self.model = self.load_model(page)
+        #self.model = self.load_model(page)
+        self.model = None
         # render the app function 
         page["func"](self.model)
 
